@@ -27,6 +27,10 @@ features:
     title: Agent 指南
     details: 掌握 Agent 架构、记忆系统、多 Agent 配置与安全模型。
     link: /agent/
+  - icon: 🦞
+    title: OpenClaw Lab 实战
+    details: AI 开发团队架构、Telegram 多机器人、工作区定制、配置参考。
+    link: /lab/
 ---
 
 <style>

@@ -116,6 +116,8 @@ git commit -m "初始化 Agent 工作区"
 - `~/.openclaw/` 下的配置和凭证
 - 敏感聊天记录
 
+**角色定制模板**：产品经理、架构师、开发/测试/运维等角色工作区定制，参见 [工作区定制指南](/lab/setup/workspace/product-manager)。
+
 ---
 
 ## 第三章：记忆系统 — Agent 如何"记住"你
@@ -203,6 +205,8 @@ openclaw agents add social
 ### 4.5 一个 WhatsApp 号码多人使用
 
 可以在一个 WhatsApp 号码下，根据发送者的手机号路由到不同的 Agent。
+
+**进阶阅读**：若需搭建完整的 AI 开发团队（8 角色、Telegram 多机器人、与 Cursor 协作），参见 [OpenClaw AI Dev Team 架构](/lab/architecture/ai-dev-team)。
 
 ---
 

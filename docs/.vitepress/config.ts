@@ -15,6 +15,7 @@ export default defineConfig({
       { text: '指南', link: '/guide/' },
       { text: 'Skills', link: '/skills/' },
       { text: 'Agent', link: '/agent/' },
+      { text: 'Lab 实战', link: '/lab/' },
       {
         text: '资源',
         items: [
@@ -43,6 +44,51 @@ export default defineConfig({
         text: '🤖 Agent 指南',
         items: [
           { text: 'Agent 完全指南', link: '/agent/' }
+        ]
+      },
+      {
+        text: '🦞 OpenClaw Lab 实战',
+        collapsed: true,
+        items: [
+          { text: 'Lab 总览', link: '/lab/' },
+          {
+            text: '架构与概念',
+            items: [
+              { text: 'AI Dev Team 架构', link: '/lab/architecture/ai-dev-team' },
+              { text: '多智能体协作 Demo', link: '/lab/concepts/multi-agent-demo' },
+              { text: '子代理 Sub-Agents', link: '/lab/concepts/subagents-guide' }
+            ]
+          },
+          {
+            text: '配置与搭建',
+            items: [
+              { text: 'Agent 手动配置', link: '/lab/setup/agent-setup-guide' },
+              { text: '新增 Telegram 机器人', link: '/lab/telegram/bot-add' },
+              { text: '配置多个机器人', link: '/lab/telegram/multi-bots' },
+              { text: '机器人配置优化', link: '/lab/telegram/bot-optimize' },
+              { text: '渠道选型', link: '/lab/channels/comparison' }
+            ]
+          },
+          {
+            text: '工作区定制',
+            items: [
+              { text: '产品经理', link: '/lab/setup/workspace/product-manager' },
+              { text: '架构师', link: '/lab/setup/workspace/architect' },
+              { text: '开发工程师', link: '/lab/setup/workspace/dev' },
+              { text: '测试工程师', link: '/lab/setup/workspace/qa' },
+              { text: 'DevOps', link: '/lab/setup/workspace/ops' },
+              { text: '文档工程师', link: '/lab/setup/workspace/docs' },
+              { text: '平台管理员', link: '/lab/setup/workspace/admin' }
+            ]
+          },
+          {
+            text: '配置参考',
+            items: [
+              { text: 'openclaw.json 说明', link: '/lab/config/reference' },
+              { text: 'tools 配置', link: '/lab/config/tools' }
+            ]
+          },
+          { text: 'Agent-Send', link: '/lab/tools/agent-send' }
         ]
       }
     ],
