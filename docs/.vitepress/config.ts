@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/OpenClawLab/',
   title: 'OpenClawLab',
   description: 'OpenClaw 知识库 — 从入门到精通',
   lang: 'zh-CN',
