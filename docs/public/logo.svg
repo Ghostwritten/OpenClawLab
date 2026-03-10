@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <circle cx="64" cy="64" r="56" fill="#E85D3A" opacity="0.12"/>
+  <circle cx="64" cy="64" r="40" fill="#E85D3A" opacity="0.2"/>
+  <text x="64" y="78" text-anchor="middle" font-size="52" fill="#E85D3A" font-family="system-ui, sans-serif">🦞</text>
+</svg>
