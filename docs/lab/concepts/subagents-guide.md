@@ -1,3 +1,9 @@
+---
+title: 子代理 Sub-Agents 通俗指南
+description: 理解子代理的适用场景、使用方式与配置详解
+layout: doc
+---
+
 # 子代理（Sub-Agents）通俗指南
 
 > 基于 [OpenClaw 官方 Sub-Agents 文档](https://docs.openclaw.ai/tools/subagents) 整理，用更通俗的语言说明什么是子代理、适用场景及如何配置。

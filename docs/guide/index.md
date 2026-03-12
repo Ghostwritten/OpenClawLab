@@ -1,4 +1,6 @@
 ---
+title: OpenClaw 完整指南
+description: 从安装到配置，从渠道到模型，全面覆盖 OpenClaw 的每一个核心功能
 layout: doc
 ---
 # OpenClaw 🦞 — 完整指南

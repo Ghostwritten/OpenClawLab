@@ -1,3 +1,9 @@
+---
+title: 多智能体协作概念澄清与实战 Demo
+description: 分清多 Agent 路由、Sub-agents、Agent-to-Agent 的机制与落地方式
+layout: doc
+---
+
 # 别再把多 Bot 和多 Agent 搞混了：OpenClaw 协作全景与落地 Demo
 
 > 面向经常把 `subagents`、`agent-to-agent`、`多个 bot 分工`混在一起的用户。本文给你一套可执行的判断框架：**先分清机制，再选架构，再做最小可用落地**。
@@ -41,6 +47,33 @@
 - 多 Agent 路由 = “谁对外接活”
 - Sub-agents = “谁在后台干活”
 - Agent-to-Agent = “两个会话如何互相发消息”
+
+### 三种机制对比图
+
+```mermaid
+flowchart TB
+  subgraph MultiAgent [多 Agent 路由]
+    MA1[多个 Bot 入口]
+    MA2["bindings 分流"]
+    MA3[消息到 agentId]
+    MA1 --> MA2 --> MA3
+  end
+
+  subgraph SubAgents [Sub-agents]
+    SA1[用户到 1 个 Bot]
+    SA2[协调 Agent spawn 子任务]
+    SA3[子任务并行执行后回报]
+    SA1 --> SA2 --> SA3
+  end
+
+  subgraph AgentToAgent [Agent-to-Agent]
+    A2A1[Session A]
+    A2A2["sessions_send"]
+    A2A3[Session B]
+    A2A1 -->|发送| A2A2 --> A2A3
+    A2A3 -.->|可选回复| A2A1
+  end
+```
 
 ---
 

@@ -1,3 +1,9 @@
+---
+title: 现有机器人配置优化指南
+description: 将多 Telegram 机器人配置收敛到一机器人一 Agent 的规范形态
+layout: doc
+---
+
 # 现有机器人配置优化指南
 
 > 当你在 OpenClaw 中已经接入了多个 Telegram 机器人（例如「产品负责人」+「资讯」两个 bot），但配置方式与 [OpenClaw AI Dev Team 架构](/lab/architecture/ai-dev-team) 不一致时，可按本指南逐步优化，使命名、workspace、bindings 与 agents 一一对应，便于后续扩展和维护。

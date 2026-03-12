@@ -1,3 +1,9 @@
+---
+title: Agent 手动配置实战指南
+description: 以 Architect 为例的通用 Agent 配置流程，适合手动配置用户
+layout: doc
+---
+
 # OpenClaw Agent 手动配置实战指南（以 Architect 为例）
 
 > 本文为通用 Agent 配置流程，以**架构师（Architect）**为例说明。配置其他角色（产品经理、开发工程师、测试工程师等）时，将示例中的 `architect` 替换为对应 `agentId` 即可，流程一致。

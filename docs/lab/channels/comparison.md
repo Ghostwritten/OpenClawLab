@@ -1,3 +1,9 @@
+---
+title: 渠道选型指南
+description: 飞书、Telegram、WhatsApp、Slack 等主流渠道对比与开发团队选型建议
+layout: doc
+---
+
 # OpenClaw 渠道选型指南：飞书、Telegram、WhatsApp、Slack 等对比与开发团队推荐
 
 > 本文基于 OpenClaw 官方文档与生产实践，从对接复杂度、企业适配度、团队协作能力等维度，对主流消息渠道进行横向对比，并给出开发团队场景下的选型建议。

@@ -1,3 +1,9 @@
+---
+title: tools 配置说明
+description: openclaw.json 中 tools 相关配置，控制工具策略、沙箱与权限
+layout: doc
+---
+
 # 配置文件中 tools 配置说明
 
 > `~/.openclaw/openclaw.json` 中与工具（tools）相关的配置完整参考。用于控制智能体可调用的工具、执行策略、沙箱与提升权限等。

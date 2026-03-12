@@ -1,3 +1,9 @@
+---
+title: OpenClaw AI Dev Team 完整触发架构
+description: 8 角色 Agent、Telegram 多机器人、定时/按需/持续触发与 Cursor 协作模式
+layout: doc
+---
+
 # OpenClaw AI Dev Team 完整触发架构
 
 > 面向「真正可运行的 AI 软件开发团队」：8 个角色 Agent、Telegram 多机器人、定时/按需/持续触发，以及基于 Mac Mini + Cursor 的省 token 开发协作模式。
@@ -93,7 +99,40 @@
 
 ## 4. Agent 触发关系图
 
-### 4.1 Agent 触发关系（Mermaid）
+### 4.1 定时 / 按需 / 持续 触发模式总览
+
+```mermaid
+flowchart LR
+  subgraph TriggerModes [触发模式]
+    Ondemand[按需]
+    Cron[定时]
+    Heartbeat[持续]
+  end
+
+  subgraph OndemandDetail [按需：用户/Bot 主动]
+    O1[Telegram 对话]
+    O2[subagents spawn]
+    O1 --> O2
+  end
+
+  subgraph CronDetail [定时：Cron 到点]
+    C1[isolated 会话]
+    C2[推送到 Telegram]
+    C1 --> C2
+  end
+
+  subgraph HeartbeatDetail [持续：Heartbeat 周期]
+    H1[HEARTBEAT.md 清单]
+    H2[执行并投递]
+    H1 --> H2
+  end
+
+  Ondemand --> OndemandDetail
+  Cron --> CronDetail
+  Heartbeat --> HeartbeatDetail
+```
+
+### 4.2 Agent 与 Telegram 多 Bot 路由关系（Mermaid）
 
 ```mermaid
 flowchart LR
@@ -162,7 +201,7 @@ flowchart LR
   Dev -->|spawn| Ops
 ```
 
-### 4.2 按需调度流程（Mermaid）
+### 4.3 按需调度流程（Mermaid）
 
 ```mermaid
 sequenceDiagram

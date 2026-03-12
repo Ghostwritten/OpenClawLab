@@ -1,3 +1,9 @@
+---
+title: 新增 Telegram 机器人操作手册
+description: 按 AI Dev Team 架构规范新增 Telegram 机器人的完整操作步骤
+layout: doc
+---
+
 # 新增 Telegram 机器人操作手册
 
 > 本文为「按 [OpenClaw AI Dev Team 架构](/lab/architecture/ai-dev-team) 规范新增一个 Telegram 机器人」的完整操作步骤，以 **系统架构师** 机器人（OpenClaw_Zong_Arch_bot）为例，从 BotFather 创建到配置生效、验证全流程说明。

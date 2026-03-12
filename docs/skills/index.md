@@ -1,4 +1,6 @@
 ---
+title: OpenClaw Skills 完全指南
+description: 深入理解 Skills 系统的设计理念、工作原理、编写方法与安全机制
 layout: doc
 ---
 # OpenClaw Skills 完全指南：从小白到精通

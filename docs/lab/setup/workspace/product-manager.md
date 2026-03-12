@@ -1,3 +1,9 @@
+---
+title: 产品经理工作区定制
+description: 产品经理 Agent 的 SOUL/AGENTS/TOOLS 等工作区文件定制指南
+layout: doc
+---
+
 # 产品经理 Agent 工作区引导文件定制指南
 
 > 适用场景：你已经完成两件事——  

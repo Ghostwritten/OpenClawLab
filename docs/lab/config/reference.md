@@ -1,3 +1,9 @@
+---
+title: openclaw.json 配置说明手册
+description: openclaw.json 完整配置参考，顶层结构与各模块说明
+layout: doc
+---
+
 # OpenClaw 配置文件说明手册
 
 > `~/.openclaw/openclaw.json` 完整配置参考。格式为 JSON5（支持注释与尾逗号）。所有字段可选，未配置时使用默认值。环境变量 `OPENCLAW_CONFIG_PATH` 可指定配置文件路径。

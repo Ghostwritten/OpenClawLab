@@ -1,3 +1,9 @@
+---
+title: Agent-Send 使用指南
+description: 不依赖聊天消息，直接让智能体执行任务并投递结果
+layout: doc
+---
+
 # Agent Send 使用指南
 
 > 基于 [OpenClaw 官方 Agent Send 文档](https://docs.openclaw.ai/tools/agent-send) 整理，用更贴近实战的方式说明 `openclaw agent` 是什么、典型场景、会话选择、回复投递与配置要点。

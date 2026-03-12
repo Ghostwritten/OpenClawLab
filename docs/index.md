@@ -3,8 +3,11 @@ layout: page
 hero:
   name: "OpenClawLab"
   text: "从入门到精通的知识库"
-  tagline: OpenClaw 🦞 — 你的个人 AI 助手网关
+  tagline: OpenClaw 🦞 — 你的个人 AI 助手网关。由社区整理的实战知识库，覆盖配置、多 Agent 与最佳实践。
   actions:
+    - theme: brand
+      text: 5 分钟上手
+      link: /quickstart/
     - theme: brand
       text: 开始阅读
       link: /guide/
@@ -31,6 +34,10 @@ features:
     title: OpenClaw Lab 实战
     details: AI 开发团队架构、Telegram 多机器人、工作区定制、配置参考。
     link: /lab/
+  - icon: ❓
+    title: 常见问题
+    details: 配置、渠道、Agent、Skills 的常见故障与排错指引。
+    link: /faq/
 ---
 
 <style>

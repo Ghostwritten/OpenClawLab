@@ -1,3 +1,9 @@
+---
+title: DevOps 工程师工作区定制
+description: DevOps/运维 Agent 的 SOUL/AGENTS/TOOLS 等工作区文件定制指南
+layout: doc
+---
+
 # DevOps 工程师 Agent 工作区引导文件定制指南
 
 > 适用场景：你已经完成两件事——  

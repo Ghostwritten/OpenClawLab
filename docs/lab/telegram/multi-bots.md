@@ -1,3 +1,9 @@
+---
+title: 配置多个 Telegram 机器人完整指南
+description: 在单一 Gateway 中配置多 Telegram 机器人，实现职责分离与多智能体路由
+layout: doc
+---
+
 # OpenClaw 配置多个 Telegram 机器人完整指南
 
 > 本文深入讲解如何在单一 OpenClaw Gateway 实例中配置并管理多个 Telegram 机器人，实现职责分离、多智能体路由与自动化场景落地。
