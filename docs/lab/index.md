@@ -1,3 +1,9 @@
+---
+title: OpenClaw Lab 文档
+description: AI 开发团队搭建、多机器人配置、工作区定制与最佳实践
+layout: doc
+---
+
 # OpenClaw Lab 文档
 
 > OpenClaw AI 开发团队搭建、多机器人配置、工作区定制与最佳实践。
@@ -28,10 +34,15 @@
 - [文档工程师](/lab/setup/workspace/docs)
 - [平台管理员](/lab/setup/workspace/admin)
 
+### 版本更新
+
+- [v2026.3.11 版本更新报告](/releases/v2026-3-11)
+
 ### 配置参考
 
 - [openclaw.json 配置说明手册](/lab/config/reference)
 - [配置文件 tools 配置说明](/lab/config/tools)
+- [禁用渠道或机器人手册](/lab/config/disable-bots-guide)
 
 ### 工具
 

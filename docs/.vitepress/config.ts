@@ -5,12 +5,21 @@ export default defineConfig({
   title: 'OpenClawLab',
   description: 'OpenClaw 知识库 — 从入门到精通',
   lang: 'zh-CN',
+  lastUpdated: true,
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }]
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+    ['meta', { name: 'description', content: 'OpenClaw 中文知识库：从入门到精通，覆盖 Agent、Skills、多机器人实战与最佳实践' }],
+    ['meta', { property: 'og:title', content: 'OpenClawLab — OpenClaw 知识库' }],
+    ['meta', { property: 'og:description', content: '由社区整理的 OpenClaw 实战知识库，覆盖配置、多 Agent 与最佳实践' }],
+    ['meta', { property: 'og:type', content: 'website' }]
   ],
   themeConfig: {
     logo: '/logo.svg',
     siteTitle: 'OpenClawLab',
+    editLink: {
+      pattern: 'https://github.com/Ghostwritten/OpenClawLab/edit/main/docs/:path',
+      text: '在 GitHub 上编辑此页'
+    },
     nav: [
       { text: '指南', link: '/guide/' },
       { text: 'Skills', link: '/skills/' },
@@ -19,6 +28,8 @@ export default defineConfig({
       {
         text: '资源',
         items: [
+          { text: '关于本项目', link: '/about/' },
+          { text: '常见问题', link: '/faq/' },
           { text: 'OpenClaw 官网', link: 'https://openclaw.ai' },
           { text: '官方文档', link: 'https://docs.openclaw.ai' },
           { text: 'GitHub', link: 'https://github.com/openclaw/openclaw' },
@@ -29,9 +40,11 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: '📖 完整指南',
+        text: '📖 指南',
         items: [
-          { text: 'OpenClaw 完整指南', link: '/guide/' }
+          { text: '5 分钟上手', link: '/quickstart/' },
+          { text: 'OpenClaw 完整指南', link: '/guide/' },
+          { text: '常见问题', link: '/faq/' }
         ]
       },
       {
@@ -47,8 +60,15 @@ export default defineConfig({
         ]
       },
       {
+        text: '📦 版本更新',
+        items: [
+          { text: '版本列表', link: '/releases/' },
+          { text: 'v2026.3.11 更新报告', link: '/releases/v2026-3-11' }
+        ]
+      },
+      {
         text: '🦞 OpenClaw Lab 实战',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: 'Lab 总览', link: '/lab/' },
           {
@@ -85,7 +105,8 @@ export default defineConfig({
             text: '配置参考',
             items: [
               { text: 'openclaw.json 说明', link: '/lab/config/reference' },
-              { text: 'tools 配置', link: '/lab/config/tools' }
+              { text: 'tools 配置', link: '/lab/config/tools' },
+              { text: '禁用渠道或机器人手册', link: '/lab/config/disable-bots-guide' }
             ]
           },
           { text: 'Agent-Send', link: '/lab/tools/agent-send' }
@@ -96,7 +117,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/Ghostwritten/OpenClawLab' }
     ],
     footer: {
-      message: '基于 OpenClaw 官方文档整理',
+      message: '社区知识库，与 <a href="https://docs.openclaw.ai">官方文档</a> 互补。详见 <a href="/OpenClawLab/about/">关于本项目</a>。',
       copyright: '© 2025 OpenClawLab. Powered by VitePress.'
     },
     search: {
